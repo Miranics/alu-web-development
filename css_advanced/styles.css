@@ -162,15 +162,15 @@ header .subtitle {
     margin-bottom: 10px;
 }
 
+.footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
 .footer {
     background-color: #1d2331;
     color: white;
     padding: 20px 0;
     text-align: center;
-}
-
-.footer .social-links a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
 }
