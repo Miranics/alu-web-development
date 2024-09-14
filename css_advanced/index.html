@@ -1,112 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Example</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-    <!-- Header Section -->
-    <header>
-        <a href="#"><img src="logo.png" alt="Logo"></a>
-        <nav>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </nav>
-    </header>
+body {
+    color: #333;
+}
 
-    <!-- Banner Section -->
-    <main>
-        <section>
-            <h1>Title</h1>
-            <p style="text-align:center;">3 words</p>
-            <div style="text-align:center;">
-                <button>Click Me</button>
-            </div>
-        </section>
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
 
-        <!-- Image Grid Section -->
-        <section>
-            <h2>Title</h2>
-            <div class="container">
-                <div>
-                    <img src="image1.jpg" alt="Image 1">
-                    <h3>Name</h3>
-                    <p>Subtitle</p>
-                </div>
-                <div>
-                    <img src="image2.jpg" alt="Image 2">
-                    <h3>Name</h3>
-                    <p>Subtitle</p>
-                </div>
-                <div>
-                    <img src="image3.jpg" alt="Image 3">
-                    <h3>Name</h3>
-                    <p>Subtitle</p>
-                </div>
-            </div>
-        </section>
+header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('header-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
 
-        <!-- Quote Section -->
-        <section>
-            <div class="container">
-                <img src="quote-image.jpg" alt="Quote Image">
-                <blockquote>"This is a quote."</blockquote>
-                <p style="text-align:center;">Author</p>
-                <p style="text-align:center;">Subtitle</p>
-            </div>
-        </section>
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
 
-        <!-- Video Section -->
-        <section>
-            <h2>Title</h2>
-            <div class="container">
-                <div>
-                    <img src="video1.jpg" alt="Video 1">
-                    <h3>Video Title</h3>
-                    <p>Description</p>
-                </div>
-                <!-- Repeat for other videos -->
-            </div>
-        </section>
+header .subtitle {
+    font-size: 24px;
+    margin: 10px 0;
+}
 
-        <!-- Membership Section -->
-        <section>
-            <h2>Membership</h2>
-            <div class="container">
-                <div>
-                    <img src="membership1.jpg" alt="Membership 1">
-                    <h3>Title</h3>
-                    <p>Text</p>
-                    <div style="text-align:center;">
-                        <button>Join</button>
-                    </div>
-                </div>
-                <!-- Repeat for other memberships -->
-            </div>
-        </section>
+.register-btn {
+    background-color: #b168f9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
 
-        <!-- FAQ Section -->
-        <section>
-            <h2>FAQ</h2>
-            <div class="container">
-                <div>
-                    <h3>Question 1</h3>
-                    <p>Answer 1</p>
-                </div>
-                <!-- Repeat for other FAQs -->
-            </div>
-        </section>
-    </main>
+.pros-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
 
-    <!-- Footer Section -->
-    <footer>
-        <a href="#"><img src="footer-logo.png" alt="Footer Logo"></a>
-        <p>&copy; 2024 Footer Text</p>
-    </footer>
-</body>
-</html>
+.pro {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}
+
+.pro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.pro h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pro p {
+    color: #888;
+    font-size: 14px;
+}
+
+.testimonial-section {
+    background-color: #b168f9;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #f0e5ff;
+}
+
+.tutorials-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.tutorials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tutorial {
+    width: 200px;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+}
+
+.tutorial h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tutorial p {
+    color: #888;
+    font-size: 14px;
+}
+
+.membership-section {
+    background-color: #1d2331;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.option {
+    text-align: center;
+}
+
+.option .smiley {
+    font-size: 40px;
+}
+
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.faq {
+    margin: 20px 0;
+}
+
+.faq h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.footer {
+    background-color: #1d2331;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
