@@ -1,5 +1,5 @@
 # Advanced HTML Project
-![Advanced HTML and CSS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fjovian.com%2Faakashns%2Fadvanced-html-and-css&psig=AOvVaw1wGk-BSdcIstQxa8l2z5B7&ust=1726404483842000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCe97u8wogDFQAAAAAdAAAAABAE)
+!(https://www.google.com/url?sa=i&url=https%3A%2F%2Fjovian.com%2Faakashns%2Fadvanced-html-and-css&psig=AOvVaw1wGk-BSdcIstQxa8l2z5B7&ust=1726404483842000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCe97u8wogDFQAAAAAdAAAAABAE)
 
 
 ## Project Overview
