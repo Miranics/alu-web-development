@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Structure</title>
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        header img, footer img {
+            width: 50px;
+            height: auto;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .container div {
+            text-align: center;
+            margin: 10px;
+            width: 30%;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+        }
+        blockquote {
+            text-align: center;
+            font-style: italic;
+        }
+        footer {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
         <a href="#"><img src="logo.png" alt="Logo"></a>
         <nav>
@@ -17,115 +74,94 @@
         </nav>
     </header>
 
-    <!-- Main Banner -->
+    <!-- Banner Section -->
     <main>
-        <!-- Banner Section -->
         <section>
-            <div>
-                <h1>Main Title</h1>
-                <p>Three Words</p>
+            <h1>Title</h1>
+            <p style="text-align:center;">3 words</p>
+            <div style="text-align:center;">
                 <button>Click Me</button>
             </div>
-            <div>
-                <h2>Section Title</h2>
+        </section>
+
+        <!-- Image Grid Section -->
+        <section>
+            <h2>Title</h2>
+            <div class="container">
                 <div>
-                    <div>
-                        <img src="image1.png" alt="Image 1">
-                        <h3>Image Title 1</h3>
-                        <p>Subtitle 1</p>
-                    </div>
-                    <div>
-                        <img src="image2.png" alt="Image 2">
-                        <h3>Image Title 2</h3>
-                        <p>Subtitle 2</p>
-                    </div>
-                    <div>
-                        <img src="image3.png" alt="Image 3">
-                        <h3>Image Title 3</h3>
-                        <p>Subtitle 3</p>
-                    </div>
-                    <div>
-                        <img src="image4.png" alt="Image 4">
-                        <h3>Image Title 4</h3>
-                        <p>Subtitle 4</p>
-                    </div>
+                    <img src="image1.jpg" alt="Image 1">
+                    <h3>Name</h3>
+                    <p>Subtitle</p>
+                </div>
+                <div>
+                    <img src="image2.jpg" alt="Image 2">
+                    <h3>Name</h3>
+                    <p>Subtitle</p>
+                </div>
+                <div>
+                    <img src="image3.jpg" alt="Image 3">
+                    <h3>Name</h3>
+                    <p>Subtitle</p>
                 </div>
             </div>
         </section>
 
         <!-- Quote Section -->
         <section>
-            <div>
-                <img src="quote-image.png" alt="Quote Image">
-                <div>
-                    <blockquote>"This is a quote."</blockquote>
-                    <p>Author Name</p>
-                    <p>Quote subtitle</p>
-                </div>
+            <div class="container">
+                <img src="quote-image.jpg" alt="Quote Image">
+                <blockquote>"This is a quote."</blockquote>
+                <p style="text-align:center;">Author</p>
+                <p style="text-align:center;">Subtitle</p>
             </div>
         </section>
 
-        <!-- Videos Section -->
+        <!-- Video Section -->
         <section>
-            <h2>Video Section</h2>
-            <div>
+            <h2>Title</h2>
+            <div class="container">
                 <div>
-                    <img src="video1.png" alt="Video 1">
-                    <h3>Video Title 1</h3>
-                    <p>Video Text 1</p>
-                    <div>
-                        <img src="author1.png" alt="Author 1">
-                        <h4>Author 1</h4>
-                        <div>
-                            <img src="star.png" alt="Star Rating">
-                            <p>4/5</p>
-                        </div>
-                    </div>
+                    <img src="video1.jpg" alt="Video 1">
+                    <h3>Video Title</h3>
+                    <p>Description</p>
                 </div>
-                <!-- Repeat similar blocks for other videos -->
+                <!-- Repeat for other videos -->
             </div>
         </section>
 
         <!-- Membership Section -->
         <section>
             <h2>Membership</h2>
-            <div>
+            <div class="container">
                 <div>
-                    <img src="member1.png" alt="Member 1">
-                    <h3>Member Title 1</h3>
-                    <p>Membership Text 1</p>
-                    <button>Join Now</button>
+                    <img src="membership1.jpg" alt="Membership 1">
+                    <h3>Title</h3>
+                    <p>Text</p>
+                    <div style="text-align:center;">
+                        <button>Join</button>
+                    </div>
                 </div>
-                <!-- Repeat for other members -->
+                <!-- Repeat for other memberships -->
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section>
             <h2>FAQ</h2>
-            <div>
+            <div class="container">
                 <div>
                     <h3>Question 1</h3>
-                    <p>Answer to Question 1</p>
+                    <p>Answer 1</p>
                 </div>
-                <div>
-                    <h3>Question 2</h3>
-                    <p>Answer to Question 2</p>
-                </div>
+                <!-- Repeat for other FAQs -->
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <div>
-            <img src="logo-footer.png" alt="Footer Logo">
-            <div>
-                <a href="#"><img src="footer-link1.png" alt="Footer Link 1"></a>
-                <p>Footer Text</p>
-            </div>
-        </div>
+        <a href="#"><img src="footer-logo.png" alt="Footer Logo"></a>
+        <p>&copy; 2024 Footer Text</p>
     </footer>
-
 </body>
 </html>
