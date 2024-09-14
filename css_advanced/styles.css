@@ -1,395 +1,176 @@
-.body{
-	    font-family: 'Source Sans Pro';
-	        margin: 0px;
-		    padding: 0px;
-		        width: 100%;
-		}
-		.nav{
-			    display: grid;
-			        grid-template-columns: 25% 75%;
-			}
-			.Nav_ul{
-				    list-style: none;
-				        float: right;
-					    display: flex;
-					        margin-right: 100px;
-						    margin-left: 500px;
-						        color: white;
-							    padding: 15px 15px;
-							        
-							        text-decoration: none;
-								    font-size: 15px;
-								        
-								        transition: background-color 0.5s;
-								}
-								.Nav_ul li{
-									    padding-right: 30px;
-									        margin-right: 30px;
-									}
-									.Nav_ul li a{
-										    font-size: 20px;
-									    }
-									        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-									    .Nav_ul a:hover{
-										        background-color: rgb(157, 89, 220);
-											    border-radius: 6px;
+body {
+    color: #333;
+}
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
 
-										    }
+header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('header-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
 
-										    #linked, #linked1{
-											        width: 50px;
-												    margin-top: 10px;
-												        border-radius: 25px;
-													    margin-left: 40px;
-													        float: left;
-														    padding: 0px;
-														        
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
 
-													    }
-													    a:link{
-														        text-decoration: none;
-															    color: white;
-															        font-size: 8px;
+header .subtitle {
+    font-size: 24px;
+    margin: 10px 0;
+}
 
-															}
-															.banner{
-																    grid-template-rows: 1fr 1fr;
-															    }
-															    .ban_intro{
-																        text-align: center;
-																	    padding-top: 70px;
-																	        color: white;
-																		    margin-bottom: 100px;
-																	    }
-																	    .title_intro{
-																		        font-size: 150px;
-																			    margin-top: 380px;
-																			        font-weight: 1px;
-																				    margin-bottom: 0px;
-																				        padding-left: 35px;
-																					    padding-right: 35px;
+.register-btn {
+    background-color: #b168f9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
 
-																				    }
-																				    .devise{
-																					        font-size: 40px;
-																						    
-																						    margin-top: 0px;
-																						        margin-bottom: 50px;
-																							    
-																						}
-																						.Register_button, .Register_button1{
-																							    background-color: rgb(157, 89, 220);
-																							        border: none;
-																								    color: white;
-																								        font-weight: bold;
-																									    font-size: 30px;
-																									        padding: 20px;
-																										    border-radius: 30px;
-																										        box-shadow: 3px 3px 4px black;
-																											    cursor: pointer;
-																											        margin-bottom: 70px;
-																											}
-																											.Register_button:hover, .Register_button1:hover{
-																												    background-color: rgba(157, 89, 220, 0.5);
-																												        box-shadow: 6px 6px 4px black;
-																												}
-																												.Attestation{
-																													    display: grid;
-																													        grid-template-rows: 20% 80%;
-																													}
-																													.from_pros{
-																														    text-align: center;
-																														        font-size: 50px;
-																															    color: white;
-																															        margin-bottom: 40px;
-																																   
-																															}
-																															.images, .images1{
-																																    width: 150px;
-																																        border-radius: 100px;
-																																	    margin-top: 20px;
-																																    }
-																																    .Bests{
-																																	        display: grid;
-																																		    grid-template-columns: 25% 25% 25% 25%;
-																																		        text-align: center;
-																																			    color: white;
-																																			        margin-top: 100px;
-																																			}
-																																			.Names{
-																																				    font-weight: 600;
-																																				        font-size: 25px;
-																																					    margin-bottom: 3px;
-																																					        margin-top: 3px;
-																																					}
-																																					.Prizes{
-																																						    font-style: italic;
-																																						        font-size: 18px;
-																																							    margin-top: 0px;
-																																						    }
-																																						    #Bg_img{
-																																							        background-repeat: no-repeat;
-																																								    background-attachment: scroll;
-																																								        background-position: center top;
-																																									    
-																																									    width: 1500px;
-																																									        background-size: width height;
-																																										    background-color: rgba(7, 22, 41, 0.7);
-																																										        background-image: url("https://s3-alpha-sig.figma.com/img/0278/3812/f9da308b090ff05e9e86fa2affd8ea9f?Expires=1675641600&Signature=KLtDMkWfy65~GLs056ALjL4OgcnKnSfNxbXSlFE1mkzVJTg5KEkcyJ3jAhfssavS05tXg8ERVhXfQAkLcwkkPgLM0Evi8zwVGrVr~~85G1sW6cUcUa1xwC5UtEhTIlTBuV0c2x-W0NHaiBFLD5PdoCqbWvHOyu1CqacP6UeTatvuKZvrYlkSl7shPU7qA7RnI5Q5aA2CBrHutRgem~krzuS2qm~eI5EVU5X5aoEc5hDIp0UqfvaFndtdJoPBRWMetLY5B7yUy3l8~3F5i9viwzd6-jsxeM~fn5Vaom2jkou0W9mC9e9PqSlABQ7CwIHz5WU6uuSs1L32Dol3aYFSmA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
-																																											    background-blend-mode: multiply;
-																																											        background: radial-gradient(transparent, rgb(7, 22, 41)), url("https://s3-alpha-sig.figma.com/img/0278/3812/f9da308b090ff05e9e86fa2affd8ea9f?Expires=1675641600&Signature=KLtDMkWfy65~GLs056ALjL4OgcnKnSfNxbXSlFE1mkzVJTg5KEkcyJ3jAhfssavS05tXg8ERVhXfQAkLcwkkPgLM0Evi8zwVGrVr~~85G1sW6cUcUa1xwC5UtEhTIlTBuV0c2x-W0NHaiBFLD5PdoCqbWvHOyu1CqacP6UeTatvuKZvrYlkSl7shPU7qA7RnI5Q5aA2CBrHutRgem~krzuS2qm~eI5EVU5X5aoEc5hDIp0UqfvaFndtdJoPBRWMetLY5B7yUy3l8~3F5i9viwzd6-jsxeM~fn5Vaom2jkou0W9mC9e9PqSlABQ7CwIHz5WU6uuSs1L32Dol3aYFSmA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
-																																											}
-																																											header{   
-																																												    position: absolute;   
-																																											    }
-																																											    .Quote_section{
-																																												        width: 1500px;
-																																													    
-																																												}
-																																												.Quote{
-																																													    display: grid;
-																																													        grid-template-columns: 33% 67%;
-																																														    font-size: 15px;
-																																														        float: right;
-																																															    background-color: rgb(157, 89, 220);
-																																															        color: wheat;
-																																															}
-																																															.blockquote_gride{
-																																																    display: grid;
-																																																        grid-template-rows: 50% 50%;
-																																																}
-																																																.images1{
-																																																	    zoom: 150%;
-																																																	        border-radius: 150px; 
-																																																		    margin-left: 144px;
-																																																		        margin-top: 30px;
-																																																			    margin-bottom: 30px;
-																																																		    }
-																																																		    .Quote_name{
-																																																			        font-size: 20px;
-																																																				    font-weight: bold;
-																																																				        margin-left: 50px;
-																																																					    margin-top: 0px;
-																																																					        padding-top: 0px;
-																																																						    margin-bottom: 0px;
-																																																					    }
-																																																					    .Quote_profession{
-																																																						        margin-left: 50px;
-																																																							    padding-bottom: 50px;
-																																																							        margin-top: 5px;
-																																																								    font-style: italic;
-																																																								        
-																																																							    }
-																																																							    .blockquote{
-																																																								        font-size: 15px;
-																																																									    margin-top: 50px;
-																																																								    }
-																																																								    .Videos{
-																																																									        width: 1500px;
-																																																										    display: grid;
-																																																										        grid-template-rows: 10% 90%;
-																																																										}
-																																																										#Videos_block{
-																																																											    width: 1500px;
-																																																											        display: grid;
-																																																												    grid-template-columns: 1fr 1fr 1fr 1fr;
-																																																												        
-																																																											    }
-																																																											    .Videos_title{
-																																																												        text-align: center;
-																																																													    margin-top: 50px;
-																																																													        
-																																																												    }
-																																																												    .Video_itself{
-																																																													        width: 300px;
-																																																													}
-																																																													.Video_images{
-																																																														    width: 80px;
-																																																													    }
+.pros-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
 
-																																																													    .Free_membership{
-																																																														        width: 1500px;
-																																																															    height: 750px;
-																																																															        display: grid;
-																																																																    grid-template-rows: 20% 60% 20%;
-																																																																        background-color: #071629;
-																																																																	    color: white;
-																																																																	        text-align: center;
-																																																																	}
-																																																																	.Mem_img{
-																																																																		    width: 80px;
-																																																																		        color: aliceblue;
-																																																																			    margin-top: 90px;
-																																																																		    }
-																																																																		    .Mem_block{
-																																																																			        display: grid;
-																																																																				    grid-template-columns: 25% 25% 25% 25%;
-																																																																			    }
-																																																																			    .Mem_title{
-																																																																				        margin-bottom: 40px;
-																																																																					    padding-top: 60px;
-																																																																					        font-size: 50px;
-																																																																					}
-																																																																					.Register_button1{
-																																																																						    width: 400px;
-																																																																						        margin-left: 550px;
-																																																																							    margin-right: 550px;
-																																																																						    }
-																																																																						    .FAQ_section{
-																																																																							        width: 1500px;
-																																																																								    display: grid;
-																																																																								        grid-template-rows: 20% 80%;
-																																																																								}
-																																																																								.FAQ_title{
-																																																																									    text-align: center;
-																																																																									        margin-top: 40px;
-																																																																										    font-size: 90px;
-																																																																										        margin-bottom: 40px;
-																																																																										}
-																																																																										.FAQ_col{
-																																																																											    display: grid;
-																																																																											        grid-template-columns: 50% 50%;
-																																																																												    margin: 10px;
-																																																																											    }
-																																																																											    .FAQ_row{
-																																																																												        display: grid;
-																																																																													    grid-template-rows: 50%;
-																																																																												    }
-																																																																												    .FAQ_h2{
-																																																																													        margin-top: 100px;;
-																																																																													}
-																																																																													footer{
-																																																																														    
-																																																																														    width: 1500px;
-																																																																														        background-color: #071629;
-																																																																															    color: white;
+.pro {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}
 
-																																																																														    }
-																																																																														    .Foot_col{
-																																																																															        display: grid;
-																																																																																    grid-template-columns: 30% 40% 30%;
-																																																																															    }
-																																																																															    #linked1{
-																																																																																        margin-top: 100px;
-																																																																																	    margin-left: 100px;
-																																																																																	       
-																																																																																    }
-																																																																																    .Copyright{
-																																																																																	        text-align: center;
-																																																																																		    padding: 0px;
-																																																																																		        margin-top: 200px;
-																																																																																		}
-																																																																																		.social-media-icons{
-																																																																																			    display: grid;
-																																																																																			        grid-template-columns: 1fr 1fr 1fr;
-																																																																																				    margin-right: 0px;
-																																																																																				        margin-top: 100px;
-																																																																																				}
-																																																																																				.gg-google,
-																																																																																				.gg-google::before {
-																																																																																					 box-sizing: border-box;
-																																																																																					  display: block
-																																																																																				  }
+.pro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
-																																																																																				  .gg-google {
-																																																																																					   position: relative;
-																																																																																					    transform: scale(var(--ggs,1));
-																																																																																					     width: 20px;
-																																																																																					      height: 20px;
-																																																																																					       border: 4px solid;
-																																																																																					        border-right-color: transparent;
-																																																																																						 border-radius: 22px
-																																																																																					 }
+.pro h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-																																																																																					 .gg-google::before {
-																																																																																						  content: "";
-																																																																																						   position: absolute;
-																																																																																						    border-top: 4px solid;
-																																																																																						     border-right: 4px solid;
-																																																																																						      border-bottom: 4px solid;
-																																																																																						       border-radius: 0 0 10px 0;
-																																																																																						        width: 10px;
-																																																																																							 height: 12px;
-																																																																																							  right: -4px;
-																																																																																							   bottom: -4px
-																																																																																						   } 
-																																																																																						   .gg-google:hover, .gg-facebook:hover, .gg-twitter:hover {
-																																																																																							       color: rgb(187, 80, 38);
-																																																																																							           cursor: pointer;
-																																																																																							   }
-																																																																																							   .gg-facebook {
-																																																																																								       box-sizing: border-box;
-																																																																																								           position: relative;
-																																																																																									       display: block;
-																																																																																									           transform: scale(var(--ggs,1));
-																																																																																										       width: 20px;
-																																																																																										           height: 20px
-																																																																																											      }
-																																																																																											         
-																																																																																											         .gg-facebook::after,
-																																																																																												    .gg-facebook::before {
-																																																																																													        content: "";
-																																																																																														    display: block;
-																																																																																														        position: absolute;
-																																																																																															    box-sizing: border-box
-																																																																																															       }
-																																																																																															          
-																																																																																															          .gg-facebook::before {
-																																																																																																	      width: 8px;
-																																																																																																	          height: 20px;
-																																																																																																		      border-left: 4px solid;
-																																																																																																		          border-top: 4px solid;
-																																																																																																			      border-top-left-radius: 5px;
-																																																																																																			          left: 6px
-																																																																																																				     }
-																																																																																																				        
-																																																																																																				        .gg-facebook::after {
-																																																																																																						    width: 10px;
-																																																																																																						        height: 4px;
-																																																																																																							    background: currentColor;
-																																																																																																							        top: 7px;
-																																																																																																								    left: 4px;
-																																																																																																								        transform: skew(-5deg)
-																																																																																																									   } 
+.pro p {
+    color: #888;
+    font-size: 14px;
+}
 
-																																																																																																									      .gg-twitter {
-																																																																																																										          box-sizing: border-box;
-																																																																																																											      position: relative;
-																																																																																																											          display: block;
-																																																																																																												      transform: scale(var(--ggs,1));
-																																																																																																												          width: 20px;
-																																																																																																													      height: 20px
-																																																																																																													         }
-																																																																																																														    
-																																																																																																														    .gg-twitter::after,
-																																																																																																														       .gg-twitter::before {
-																																																																																																															           content: "";
-																																																																																																																       display: block;
-																																																																																																																           position: absolute;
-																																																																																																																	       box-sizing: border-box;
-																																																																																																																	           left: 4px
-																																																																																																																		      }
-																																																																																																																		         
-																																																																																																																		         .gg-twitter::before {
-																																																																																																																				     width: 9px;
-																																																																																																																				         height: 14px;
-																																																																																																																					     border-left: 4px solid;
-																																																																																																																					         border-bottom: 4px solid;
-																																																																																																																						     border-bottom-left-radius: 6px;
-																																																																																																																						         background:
-																																																																																																																							     linear-gradient(
-																																																																																																																							         to left,currentColor 12px,transparent 0)
-																																																																																																																								     no-repeat center 2px/10px 4px;
-																																																																																																																								         top: 4px
-																																																																																																																									    }
-																																																																																																																									       
-																																																																																																																									       .gg-twitter::after {
-																																																																																																																										           width: 4px;
-																																																																																																																											       height: 4px;
-																																																																																																																											           background: currentColor;
-																																																																																																																												       border-radius: 20px;
-																																																																																																																												           top: 2px;
-																																																																																																																													       box-shadow: 7px 4px 0,7px 12px 0
-																																																																																																																													          } 
+.testimonial-section {
+    background-color: #b168f9;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #f0e5ff;
+}
+
+.tutorials-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.tutorials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tutorial {
+    width: 200px;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+}
+
+.tutorial h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tutorial p {
+    color: #888;
+    font-size: 14px;
+}
+
+.membership-section {
+    background-color: #1d2331;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.option {
+    text-align: center;
+}
+
+.option .smiley {
+    font-size: 40px;
+}
+
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.faq {
+    margin: 20px 0;
+}
+
+.faq h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #1d2331;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
