@@ -1,14 +1,35 @@
-<header>
-	  <!-- Logo with image -->
-	    <a href="your-link-here">
-		        <img src="your-logo-here" alt="Logo">
-			  </a>
-			    
-			    <!-- Block of 3 links -->
-			      <nav>
-				          <a href="link1.html">Link 1</a>
-					      <a href="link2.html">Link 2</a>
-					          <a href="link3.html">Link 3</a>
-						    </nav>
-</header>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="logo.png" alt="Logo" width="50"></a>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </nav>
+    </header>
+</body>
+</html>
